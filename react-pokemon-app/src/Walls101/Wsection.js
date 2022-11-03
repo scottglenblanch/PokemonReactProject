@@ -6,6 +6,7 @@ export default function Wcode(data){ //Remember to rename your section here
     return(
         <>
             <div>W code here</div>
+            <p>{data}</p>
         </>
     )
 }
