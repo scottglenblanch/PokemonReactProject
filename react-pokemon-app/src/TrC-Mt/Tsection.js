@@ -1,5 +1,6 @@
 import React from 'react';
+import {data as data} from '../APIdata'
 
-export default function Tcode(){ //Remember to rename your section here
+export default function Tcode(data){ //Remember to rename your section here
     
 }
