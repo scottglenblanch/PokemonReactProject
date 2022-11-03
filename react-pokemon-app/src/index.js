@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 //-------------------------------------
 
-//Remember to rename your section here
+// Remember to rename your section here
 import Tcode from './TrC-Mt/Tsection';
 import Jcode from './hjake07/Jsection';
-import Wcode from './Walls101/Wsection';
+im// port Wcode from './Walls101/Wsection';
 
 //----------------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,11 +14,11 @@ root.render(
   <React.StrictMode>
     {/* Remember to rename your section here */}
     <Tcode></Tcode>
-    <h1>SEPARATION  - T^  Jv</h1>
+    <h1>SEPARATION    - T^ Jv</h1>
     <Jcode></Jcode>
-    <h1>SEPARATION  - J^  Wv</h1>
+    <h1>SEPARATION -   J^ Wv </h1>
     <Wcode></Wcode>
-  </React.StrictMode>
+ </React.StrictMode>
 );
 
 //-----------------------------------

@@ -1,12 +1,18 @@
-import React from 'react';
-import {data as data} from '../APIdata'
+import React, {useEffect, useState} from 'react';
 
-export default function Jcode(data){ //Remember to rename your section here
+import useFetchData from '../useFetchData';
+
+
+export default function Jcode(){ //Remember to rename your section here
     
+   
+    const data = useFetchData();
+
+
     return(
         <>
             <div>J code here</div>
-            <p>{data}</p>
+            <p>{JSON.stringify(data)}</p>
         </>
     )
 }

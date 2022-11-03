@@ -1,12 +1,18 @@
-import React from 'react';
-import {data as data} from '../APIdata'
+import React, {useEffect, useState} from 'react';
 
-export default function Wcode(data){ //Remember to rename your section here
+import useFetchData from '../useFetchData';
+
+
+export default function Wcode(){ //Remember to rename your section here
     
+   
+    const data = useFetchData();
+
+
     return(
         <>
             <div>W code here</div>
-            <p>{data}</p>
+            <p>{JSON.stringify(data)}</p>
         </>
     )
 }
