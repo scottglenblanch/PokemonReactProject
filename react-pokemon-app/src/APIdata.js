@@ -1,7 +1,9 @@
 export default function GetData(){
     //fetch data
-    //set that to data
-    //return data
+    let data = null;
+    fetch("https://api.pokemontcg.io/v1/sets")
+    .then((response) => data = response.json())
+    return data;
 }
 
 

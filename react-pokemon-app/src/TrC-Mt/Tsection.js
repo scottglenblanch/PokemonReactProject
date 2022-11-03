@@ -6,6 +6,7 @@ export default function Tcode(data){ //Remember to rename your section here
     return(
         <>
             <div>T code here</div>
+            <p>{data}</p>
         </>
     )
 }
