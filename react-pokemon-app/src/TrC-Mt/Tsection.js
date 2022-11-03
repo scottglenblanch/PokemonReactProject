@@ -1,12 +1,18 @@
-import React from 'react';
-import {data as data} from '../APIdata'
+import React, {useEffect, useState} from 'react';
 
-export default function Tcode(data){ //Remember to rename your section here
-        
+import useFetchData from '../useFetchData';
+
+
+export default function Tcode(){ //Remember to rename your section here
+    
+   
+    const data = useFetchData();
+
+
     return(
         <>
             <div>T code here</div>
-            <p>{data}</p>
+            <p>{JSON.stringify(data)}</p>
         </>
     )
 }
