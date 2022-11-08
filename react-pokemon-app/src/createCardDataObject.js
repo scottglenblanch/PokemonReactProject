@@ -38,11 +38,12 @@ const pokemon_data  = {
     pokemon_index: pokemonIndex,
     name: data.results[pokemon_index-1].name,
     picture_url: picture,
-    //type: type_data.//PATH_TO_TYPES_HERE
+    type1: type_data.types[0].type.name,
+    type2: type_data.types[1].type.name
 }
 
 //===================================
 /*
-    Send the pokemon_data to the section(s)
-    The section(s) can now create a card of that pokemon
+    Send the pokemon_data to the createCardToRender.js
+    That file can now create a card for the pokemon
 */

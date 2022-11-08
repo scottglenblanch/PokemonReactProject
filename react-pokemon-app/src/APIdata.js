@@ -5,21 +5,11 @@ export default async function GetData(){
     .then((response) => response.json())
 }
 
-/*  We care about
-Card pictures
-    let url = data.results[//iteration].url
-    let splinters = url.split('https://pokeapi.co/api/v2/pokemon/')
-    splinters = splinters[1].split('/')
-    let pokemonIndex = splinters[0]
-    let picture = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`
+/*
 Name
     data.results[//iteration].name
-Type
-    data.//Still looking
-
 
 */
-
 
 /*   API structure
 
@@ -38,7 +28,4 @@ Type
     }
 
 
-*/
-/*
-    
 */

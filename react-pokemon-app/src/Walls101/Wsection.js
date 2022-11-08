@@ -1,18 +1,15 @@
 import React, {useEffect, useState} from 'react';
 
-import useFetchData from '../useFetchData';
+import CreateCard from '../createCardToRender';
 
 
 export default function Wcode(){ //Remember to rename your section here
-    
-   
-    const data = useFetchData();
-
+    const card = CreateCard()
 
     return(
         <>
             <div>W code here</div>
-            <p>{JSON.stringify(data)}</p>
+            {card}
         </>
     )
 }
