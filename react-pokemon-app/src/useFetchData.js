@@ -3,7 +3,7 @@ import GetData from './APIdata'
 
 export default function useFetchData() {
 
-    const [data, setData] = useState(null)
+    const [data, setData] = useState({})
 
     useEffect(() => {
         GetData().then(newData => {

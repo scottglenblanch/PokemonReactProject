@@ -4,12 +4,11 @@ import CreateCard from '../createCardToRender';
 
 
 export default function Jcode(){ //Remember to rename your section here
-    const card = CreateCard()
 
     return(
-        <>
+        <div>
             <div>J code here</div>
-            {card}
-        </>
+            <CreateCard pokemonIndex={2} />
+        </div>
     )
 }

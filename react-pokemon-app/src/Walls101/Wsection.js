@@ -4,12 +4,11 @@ import CreateCard from '../createCardToRender';
 
 
 export default function Wcode(){ //Remember to rename your section here
-    const card = CreateCard()
 
     return(
-        <>
+        <div>
             <div>W code here</div>
-            {card}
-        </>
+            <CreateCard pokemonIndex={2} />
+        </div>
     )
 }
