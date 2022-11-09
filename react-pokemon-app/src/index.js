@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './Tests/reportWebVitals';
 //-------------------------------------
 
 // Remember to rename your section here
-import Tcode from './TrC-Mt/Tsection';
-import Jcode from './hjake07/Jsection';
-import Wcode from './Walls101/Wsection';
+import Tcode from './sections/TrC-Mt/Tsection';
+import Jcode from './sections/hjake07/Jsection';
+import Wcode from './sections/Walls101/Wsection';
 
 //----------------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));

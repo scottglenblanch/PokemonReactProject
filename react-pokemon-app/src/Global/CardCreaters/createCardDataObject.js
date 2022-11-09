@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import useFetchData from './useFetchData';
+import useFetchData from '../APIdata/useFetchData';
 /*
     Get a paramemter_number from the section(s)
     That number will be the pokemon the section(s) want to create
