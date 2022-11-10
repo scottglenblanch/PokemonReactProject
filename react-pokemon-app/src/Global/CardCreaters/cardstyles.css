@@ -2,13 +2,21 @@
     background-image:url(../images/CardGreenFront.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    height: 150px;
 }
 .cardName{
-
+    
 }
 .cardImage{
-
+    position: absolute;
+    left: -10px;
+    top: 50px;
 }
-.cardType{
-
-}
+.cardTypes{
+    position: absolute;
+    left: 3px;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+} 
