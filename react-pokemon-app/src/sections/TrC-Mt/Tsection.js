@@ -9,8 +9,8 @@ export default function Tcode(){ //Remember to rename your section here
     return(
         <div>
             <div>T code here</div>
-            {new Array(100).fill(1).map((startVal, index) =>(
-                <CreateCard pokemonIndex={startVal + index} typeToDisplay={wantedType} />
+            {new Array(180).fill(1).map((one, index) =>(
+                <CreateCard pokemonIndex={one + index} typeToDisplay={wantedType} key={index}/>
             ) )}
            
         </div>

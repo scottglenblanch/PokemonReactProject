@@ -1,7 +1,7 @@
 export default async function GetData(){
     //fetch data
     
-    return await fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0") //Given https://api.pokemontcg.io/v1/sets
+    return await fetch("https://pokeapi.co/api/v2/pokemon?limit=180&offset=0") //Given https://api.pokemontcg.io/v1/sets
     .then((response) => response.json())
 }
 
