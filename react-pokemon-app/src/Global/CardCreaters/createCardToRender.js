@@ -9,8 +9,9 @@ export default function CreateCard(props){
         <div className='card'>
             <h2 className='cardName'>{name}</h2>
             <img className='cardImage' src={picture_url}></img>
-            <span className='cardType'>{type1}</span>
-            <span className='cardType'>{type2}</span>
+            <div className="cardTypes">
+                <span className='cardType'>{type1} {type2}</span>
+            </div>
         </div>
     )
 }
