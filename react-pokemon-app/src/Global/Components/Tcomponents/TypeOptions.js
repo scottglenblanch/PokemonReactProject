@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect,  useReducer} from "react";
 
-export default function TypeOptions(){
+export default function TypeOptions(props){
     return(
-    <select title="Types">
+    <select title="Types" onChange={props.onChange} value={props.value}>
         <option value={null}>All</option>
         <option value={'grass'}>Grass</option>
         <option value={'poison'}>Poison</option>
@@ -21,7 +21,6 @@ export default function TypeOptions(){
         <option value={'steel'}>Steel</option>
         <option value={'ice'}>Ice</option>
         <option value={'ghost'}>Ghost</option>
-        <option value={'dragon'}>Dragon</option>
     </select>
     )
 }

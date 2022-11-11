@@ -10,7 +10,7 @@ export default function Tcode(){ //Remember to rename your section here
         <>
             <div>
                 <div style={{color: 'crimson'}}>T code here</div>
-                <TypeOptions onChange={() => console.log('Changed').then(setWantedType(this.value))}></TypeOptions>
+                <TypeOptions onChange={(e) => setWantedType(e.target.value)} value={wantedType}></TypeOptions> 
                 {new Array(180).fill(1).map((one, index) =>(
                     <CreateCard pokemonIndex={one + index} typeToDisplay={wantedType} key={index}/>
                 ) )}
