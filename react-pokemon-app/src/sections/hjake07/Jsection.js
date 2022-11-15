@@ -6,53 +6,51 @@ import CreateCard from '../../Global/CardCreaters/createCardToRender';
 export default function Jcode(){ //Remember to rename your section here
 
     return(
-        <div>
-            <div>J code here</div>
+        <div className='mySection'>
             <table>
-                <tbody>
+                
+                    <tbody>
                     <tr>
-            <td><CreateCard pokemonIndex={1} /></td>
-            <td><CreateCard pokemonIndex={4} /></td>
-            <td><CreateCard pokemonIndex={7} /></td>
-            <td><CreateCard pokemonIndex={10} /></td>
-            <td><CreateCard pokemonIndex={13} /></td>
-            <td><CreateCard pokemonIndex={16} /></td>
-            <td><CreateCard pokemonIndex={19} /></td>
-            <td><CreateCard pokemonIndex={21} /></td>
-            <td><CreateCard pokemonIndex={23} /></td>
+                   <td><CreateCard pokemonIndex={1} typeToDisplay={null}/></td>
+                   <td><CreateCard pokemonIndex={2} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={3} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={4} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={5} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={6} typeToDisplay={null} /></td>
+                    </tr>
+            
+                    <tr>
+                        
+                    
+                    <td><CreateCard pokemonIndex={7} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={8} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={9} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={10} typeToDisplay={null}  /></td>
+                    <td><CreateCard pokemonIndex={11} typeToDisplay={null}  /></td>
+                    <td><CreateCard pokemonIndex={12} typeToDisplay={null}  /></td>
 
-
-
-                     </tr>
-                     <tr>
-            <td><CreateCard pokemonIndex={2} /></td>
-            <td><CreateCard pokemonIndex={5} /></td>
-            <td><CreateCard pokemonIndex={8} /></td>
-            <td><CreateCard pokemonIndex={11} /></td>
-            <td><CreateCard pokemonIndex={14} /></td>
-            <td><CreateCard pokemonIndex={17} /></td>
-            <td><CreateCard pokemonIndex={20} /></td>
-            <td><CreateCard pokemonIndex={22} /></td>
-            <td><CreateCard pokemonIndex={24} /></td>
-
-
-
-                     </tr>
-                     <tr>
-            <td><CreateCard pokemonIndex={3} /></td>
-            <td><CreateCard pokemonIndex={6} /></td>
-            <td><CreateCard pokemonIndex={9} /></td>
-            <td><CreateCard pokemonIndex={12} /></td>
-            <td><CreateCard pokemonIndex={15} /></td>
-            <td><CreateCard pokemonIndex={18} /></td>
-
-            <td></td>
-
-                     </tr>
-                </tbody>
+                    </tr>
+                    <tr>
+                   <td><CreateCard pokemonIndex={1} typeToDisplay={null}/></td>
+                   <td><CreateCard pokemonIndex={2} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={3} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={4} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={5} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={6} typeToDisplay={null} /></td>
+                    </tr>
+            
+                    <tr>
+                        
+                    
+                    <td><CreateCard pokemonIndex={7} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={8} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={9} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={10} typeToDisplay={null}  /></td>
+                    <td><CreateCard pokemonIndex={11} typeToDisplay={null}  /></td>
+                    <td ><CreateCard pokemonIndex={12} typeToDisplay={null}  /></td>
+                    </tr>
+                    </tbody>
             </table>
-            <CreateCard pokemonIndex={3} />
-            <CreateCard pokemonIndex={4} />
         </div>
     )
 }

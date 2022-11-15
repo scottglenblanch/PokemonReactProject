@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
+import './sections/hjake07/Jstyles.css';
+
 //-------------------------------------
 
 // Remember to rename your section here

@@ -9,7 +9,7 @@ export default function CreateCard(props){
     const isDisplay = typeToDisplay === null || typeToDisplay === type1 || typeToDisplay === type2;
     return isDisplay ? (
         <div className='card'>
-            <h2 className='cardName'>{name}</h2>
+            <h2 className='cardName'>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
             <img className='cardImage' src={picture_url}></img>
             <div className="cardTypes">
                 <span className='cardType'>{type1} {type2}</span>

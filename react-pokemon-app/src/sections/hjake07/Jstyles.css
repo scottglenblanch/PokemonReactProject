@@ -1,0 +1,39 @@
+.card {
+    /* background-image:url(../../Global/images/CardGreenFront.png); */
+    object-fit: cover;
+    border: 1px solid black;
+    width: 140px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: white;
+}
+.cardName {
+text-align: center;
+}
+.cardImage {
+    margin-left: 15%;
+}
+.cardType {
+display: flex;
+justify-content: center;    
+}
+td {
+  padding: 10px;
+}
+table {
+    margin: 0 auto;
+
+}
+tr {
+height: 200px;
+}
+.mySection {
+    background-image: url(../../Global/images/pokemon-background.png);
+}
+.backgroundTest {
+    background-color: rgb(43, 80, 215);
+    background-image: url(../../Global/images/pokeball.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
