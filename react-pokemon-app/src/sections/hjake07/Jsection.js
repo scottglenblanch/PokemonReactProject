@@ -1,10 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Routes,
-    Link
-  } from "react-router-dom";
 import CreateCard from '../../Global/CardCreaters/createCardToRender';
 
 
@@ -57,41 +51,41 @@ export default function Jcode(){ //Remember to rename your section here
                     </tr>
                     </tbody>
             </table>
+            <Player1Score />
+            <Player2Score />
+            <Player3Score />
+            <Player4Score />
+
         </div>
     )
 }
-export function WelcomePage(){
+function Player1Score(){
     return(
-        <div className="container">
-                <Router>
-                <Routes>
-                    
-                    <Route path="/home" element={<WelcomePage />}></Route>
-                    <Route path="/page2" element={<Jcode />}></Route>
-                </Routes>
-                </Router>
-            <h1 className='title'>Pokemon Memory Game</h1>
-            <h2 className='playerSelect'>Players</h2>
-            <select className='playerSelect'>
-                <option>1 player</option>
-                <option>2 players</option>
-                <option>3 players</option>
-                <option>4 players</option>
-            </select>
-            <input type="text" placeholder='player name' className='nameInput' />
-            <button className='startButton'>Start Playing!</button>
+        <div className="player1Scores">
+            Player1: 2 Matches
+        </div>
+    )
+}
+function Player2Score(){
+    return(
+        <div className="player2Scores">
+            Player2: 2 Matches
+        </div>
+    )
+}
+function Player3Score(){
+    return(
+        <div className="player3Scores">
+            Player3: 2 Matches
+        </div>
+    )
+}
+function Player4Score(){
+    return(
+        <div className="player4Scores">
+            Player4: 2 Matches
         </div>
     )
 }
 
-export function Navbar(){
-    return(
-        <nav>
-            <Link to='/home'>HOME</Link>
-            <Link to='/'>HOME</Link>
-            <Link to='/page2'>GAME</Link>
-
-        </nav>
-    )
-}
 

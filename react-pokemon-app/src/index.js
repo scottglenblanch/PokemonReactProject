@@ -1,31 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
-<<<<<<< HEAD
+
 import './sections/hjake07/Jstyles.css';
-import { WelcomePage } from './sections/hjake07/Jsection';
+import Page1 from './Pages/page1'
+import Page2 from './Pages/page2'
 // import { TheRouter, Navbar } from './sections/hjake07/Jsection';
 //-------------------------------------
-=======
+
 import App from './App'
 
->>>>>>> combine
 
 
 //----------------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
-    {/* Remember to rename your section here */}
-    <Tcode></Tcode>
-    <h1>SEPARATION    - T^ Jv</h1>
-    <WelcomePage/><Jcode />
-    <h1>SEPARATION -   J^ Wv </h1>
-    <Wcode></Wcode>
-=======
-    <App></App>
->>>>>>> combine
+   <App />
+   
+    
+
+   
+
  </React.StrictMode>
 );
 

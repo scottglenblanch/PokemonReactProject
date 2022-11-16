@@ -11,9 +11,9 @@ export default function CreateCard(props){
         <div className='card'>
             <h2 className='cardName'>{name.charAt(0).toUpperCase() + name.slice(1)}</h2>
             <img className='cardImage' src={picture_url}></img>
-            <div className="cardTypes">
+            {/* <div className="cardTypes">
                 <span className='cardType'>{type1} {type2}</span>
-            </div>
+            </div> */}
         </div>
     ) : null //Can change to something else
 }

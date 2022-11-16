@@ -32,7 +32,8 @@ tr {
 height: 200px;
 }
 .mySection {
-    background-image: url(../../Global/images/pokemon-background.png);
+    background-color: #225560;
+    background-image: url(../../Global/images/pokemonstadium.jpg);
 }
 .backgroundTest {
     background-color: rgb(43, 80, 215);
@@ -42,12 +43,29 @@ height: 200px;
     background-position: center;
 }
 .container {
+    background-image: url(../../Global/images/pokemon-background.png);
+
+    height: 100vh;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(244, 244, 244);
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .playerSelect, .nameInput {
     margin: 20px auto;
@@ -72,4 +90,58 @@ height: 200px;
     font-size: 40px;
     margin: 0 auto;
     padding-bottom: 30px;
+}
+nav {
+    font-family: sans-serif;
+    background-color: #225560;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navTitle {
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    color: white;
+
+}
+.linksDiv {
+    display: flex;
+}
+.links {
+   
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+.player1Scores, .player2Scores, .player3Scores, .player4Scores{
+    background-color: rgba(255, 255, 255);
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.player1Scores {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.player2Scores {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+.player3Scores {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.player4Scores {
+    position: absolute;
+    top: 40%;
+    right: 10%;
 }
