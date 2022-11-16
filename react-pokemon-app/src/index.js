@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
-import './sections/hjake07/Jstyles.css';
-
 //-------------------------------------
 
-// Remember to rename your section here
-import Tcode from './sections/TrC-Mt/Tsection';
-import Jcode from './sections/hjake07/Jsection';
-import Wcode from './sections/Walls101/Wsection';
 
 //----------------------------
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* Remember to rename your section here */}
-    <Tcode></Tcode>
-    <h1>SEPARATION    - T^ Jv</h1>
-    <Jcode></Jcode>
-    <h1>SEPARATION -   J^ Wv </h1>
-    <Wcode></Wcode>
+    <App></App>
  </React.StrictMode>
 );
 
