@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
 import './sections/hjake07/Jstyles.css';
-
+import { WelcomePage } from './sections/hjake07/Jsection';
+// import { TheRouter, Navbar } from './sections/hjake07/Jsection';
 //-------------------------------------
 
 // Remember to rename your section here
@@ -17,7 +18,7 @@ root.render(
     {/* Remember to rename your section here */}
     <Tcode></Tcode>
     <h1>SEPARATION    - T^ Jv</h1>
-    <Jcode></Jcode>
+    <WelcomePage/><Jcode />
     <h1>SEPARATION -   J^ Wv </h1>
     <Wcode></Wcode>
  </React.StrictMode>

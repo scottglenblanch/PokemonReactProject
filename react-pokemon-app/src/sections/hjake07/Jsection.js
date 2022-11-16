@@ -1,11 +1,17 @@
 import React, {useEffect, useState} from 'react';
-
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes,
+    Link
+  } from "react-router-dom";
 import CreateCard from '../../Global/CardCreaters/createCardToRender';
 
 
 export default function Jcode(){ //Remember to rename your section here
 
     return(
+    
         <div className='mySection'>
             <table>
                 
@@ -54,3 +60,40 @@ export default function Jcode(){ //Remember to rename your section here
         </div>
     )
 }
+export function WelcomePage(){
+    return(
+        <div className="container">
+            <h1 className='title'>Pokemon Memory Game</h1>
+            <h2 className='playerSelect'>Players</h2>
+            <select className='playerSelect'>
+                <option>1 player</option>
+                <option>2 players</option>
+                <option>3 players</option>
+                <option>4 players</option>
+            </select>
+            <input type="text" placeholder='player name' className='nameInput' />
+            <button className='startButton'>Start Playing!</button>
+        </div>
+    )
+}
+
+// export function Navbar(){
+//     return(
+//         <nav>
+//             <Link to='/home'>HOME</Link>
+//             <Link to='/'>HOME</Link>
+//             <Link to='/page2'>GAME</Link>
+
+//         </nav>
+//     )
+// }
+// export function TheRouter(){
+//     return(
+//         <Router>
+//                 <Routes>
+//                     <Route path="/home" element={<WelcomePage />}></Route>
+//                     <Route path="/page2" element={<Jcode />}></Route>
+//                 </Routes>
+//             </Router>
+//     )
+//   }
