@@ -46,6 +46,8 @@ height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(244, 244, 244);
+
 }
 .playerSelect, .nameInput {
     margin: 20px auto;
@@ -62,6 +64,9 @@ height: 200px;
     background-color: #007bff;
     color: white;
     border-radius: 10px;
+}
+.startButton:hover{
+    cursor: pointer;
 }
 .title {
     font-size: 40px;
