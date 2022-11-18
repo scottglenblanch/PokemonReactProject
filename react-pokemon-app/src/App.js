@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 //-------------------------------------
-
+import 'bootstrap/dist/css/bootstrap.css'
 import Tcode from './sections/TrC-Mt/Tsection';
 import Jcode from './sections/hjake07/Jsection';
 import Wcode from './sections/Walls101/Wsection';
