@@ -3,20 +3,23 @@ import CreateCard from '../../Global/CardCreaters/createCardToRender';
 import '../hjake07/Jstyles.css'
 import '../Walls101/Wstyles.css'
 
-export default function AlexPage(){
+export default function DeckSelection(){
     return(
         <>
-        <h1>Pokemon Matching Game</h1>
 
-        <label>Number of Players: </label>
-        <select name='players' id='playerSelect'>
-            <option>1 Player</option>
-            <option>2 Players</option>
-            <option>3 Players</option>
-            <option>4 Players</option>
-        </select>
-        <br></br>
-        <br></br>
+        <div className='titlePlayers'>
+            <h1>Pokemon Matching Game</h1>
+            <label>Number of Players: </label>
+            <select name='players' id='playerSelect'>
+                <option>1 Player</option>
+                <option>2 Players</option>
+                <option>3 Players</option>
+                <option>4 Players</option>
+            </select>
+        </div>
+        
+        {/* <br></br>
+        <br></br> */}
         <div className='chosenDeck'>
             <label>Choose a deck: </label>
             <select name='decks' id='decks'>
@@ -40,7 +43,14 @@ export default function AlexPage(){
                     <option>Fighting</option>
                 </optgroup>
             </select>
-            <CreateCard pokemonIndex={1} typeToDisplay={null}></CreateCard>
+            <br></br>
+            <br></br>
+            <div className='front'>
+                <CreateCard pokemonIndex={300} typeToDisplay={null}></CreateCard>
+            </div>
+            <div className='back'>
+                <h4>Get Pranked!</h4>
+            </div>
         </div>
         
         </>
