@@ -3,7 +3,10 @@ import CreateCard from '../../Global/CardCreaters/createCardToRender';
 
 
 export default function Jcode(){ //Remember to rename your section here
-
+    const defaultArray = Array.from({length: 180}, (_, i) => i + 1)
+    
+    let randomIndex = defaultArray[Math.floor(Math.random() * 180)]
+    console.log(randomIndex)
     return(
     
         <div className='mySection'>
@@ -11,10 +14,10 @@ export default function Jcode(){ //Remember to rename your section here
                 
                     <tbody>
                     <tr>
-                   <td><CreateCard pokemonIndex={1} typeToDisplay={null}/></td>
+                   <td><CreateCard pokemonIndex={randomIndex} typeToDisplay={null}/></td>
                    <td><CreateCard pokemonIndex={2} typeToDisplay={null} /></td>
                    <td><CreateCard pokemonIndex={3} typeToDisplay={null} /></td>
-                   <td><CreateCard pokemonIndex={4} typeToDisplay={null} /></td>
+                   <td><CreateCard pokemonIndex={randomIndex} typeToDisplay={null} /></td>
                    <td><CreateCard pokemonIndex={5} typeToDisplay={null} /></td>
                    <td><CreateCard pokemonIndex={6} typeToDisplay={null} /></td>
                     </tr>
@@ -42,7 +45,7 @@ export default function Jcode(){ //Remember to rename your section here
                     <tr>
                         
                     
-                    <td><CreateCard pokemonIndex={7} typeToDisplay={null} /></td>
+                    <td><CreateCard pokemonIndex={7} typeToDisplay={null}/></td>
                     <td><CreateCard pokemonIndex={8} typeToDisplay={null} /></td>
                     <td><CreateCard pokemonIndex={9} typeToDisplay={null} /></td>
                     <td><CreateCard pokemonIndex={10} typeToDisplay={null}  /></td>

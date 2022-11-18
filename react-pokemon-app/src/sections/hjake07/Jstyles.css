@@ -128,20 +128,20 @@ nav {
 .player1Scores {
     position: absolute;
     top: 10%;
-    right: 10%;
+    right: 5%;
 }
 .player2Scores {
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 5%;
 }
 .player3Scores {
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 5%;
 }
 .player4Scores {
     position: absolute;
     top: 40%;
-    right: 10%;
+    right: 5%;
 }
