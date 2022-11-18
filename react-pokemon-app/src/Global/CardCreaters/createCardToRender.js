@@ -4,7 +4,8 @@ import './cardstyles.css'
 
 export default function CreateCard(props){
     const pokemon_index = props.pokemonIndex ?? 1;
-    const typeToDisplay = props.typeToDisplay
+    const typeToDisplay = props.typeToDisplay;
+    
     const { name = '', picture_url = '', type1 = '', type2 = ''} = useGetPokiData(pokemon_index);
     const isDisplay = typeToDisplay === null || typeToDisplay === type1 || typeToDisplay === type2;
     return isDisplay ? (
@@ -17,3 +18,4 @@ export default function CreateCard(props){
         </div>
     ) : null //Can change to something else
 }
+console.log(CreateCard)

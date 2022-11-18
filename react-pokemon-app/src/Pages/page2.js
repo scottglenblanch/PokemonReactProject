@@ -1,11 +1,10 @@
 import React from "react"
-
-export default function page2(){
+import Jcode from '../sections/hjake07/Jsection'
+export default function Page2(){
 
     return (
         <>
-            <h1>Not yet built.</h1>
-            <h4>Page2</h4>
+            <Jcode/>
         </>
     )
 }
