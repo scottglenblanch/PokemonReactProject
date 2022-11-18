@@ -1,9 +1,10 @@
-body {
+.pageThree {
     background-image: url("../../Global/images/professor_oak_s_lab_by_rosegardeninhell.jpeg");
     /* height: 100%; */
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .titlePlayers{
