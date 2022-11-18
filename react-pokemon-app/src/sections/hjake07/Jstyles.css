@@ -36,6 +36,7 @@ height: 200px;
 .mySection {
     background-color: #225560;
     background-image: url(../../Global/images/pokemonstadium.jpg);
+    height: 100vh;
 }
 .backgroundTest {
     background-color: rgb(43, 80, 215);
