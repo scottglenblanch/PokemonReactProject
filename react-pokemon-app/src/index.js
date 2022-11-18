@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
-<<<<<<<<< Temporary merge branch 1
 import './sections/hjake07/Jstyles.css';
 
 //-------------------------------------
-=========
 import App from './App'
 
->>>>>>>>> Temporary merge branch 2
 
 
 //----------------------------
