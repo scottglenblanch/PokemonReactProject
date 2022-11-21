@@ -25,19 +25,6 @@ function shuffle(array) {
   }
   console.log('1',arrayToSplit)
 let shuffledArray = arrayToSplit.concat(arrayToSplit.slice())
-// let splitArray1 = arrayToSplit.slice(0, 6)
-// let splitArray2 = arrayToSplit.slice(6, 12)
-// let splitArray3 = [splitArray1.concat(splitArray2)];
-// let finalArray =  splitArray3.slice()
-// console.log(splitArray3)
-
-console.log(shuffledArray)
-
-
-
-
-
-
 return(
         <div className='mySection' id="myTableSection">
             <div className='container'>
@@ -83,6 +70,9 @@ function Player4Score(){
             Player4: 2 Matches
         </div>
     )
+}
+function handleClick(){
+    console.log('card clicked')
 }
 //Shuffle Card Algorithm Below
 //          |
