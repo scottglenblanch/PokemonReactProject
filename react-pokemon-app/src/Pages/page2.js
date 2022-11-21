@@ -1,5 +1,5 @@
 import React from "react"
-import Jcode, { BuildTable } from '../sections/hjake07/Jsection'
+import Jcode from '../sections/hjake07/components/gameCode'
 export default function Page2(){
 
     return (
