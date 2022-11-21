@@ -1,4 +1,5 @@
 .card {
+    display: flex;
     object-fit: cover;
     border: 1px solid black;
     width: 140px;
@@ -7,6 +8,32 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.card:hover {
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cardName {
+text-align: center;
+font-size: 20px;
+}
+.cardImage {
+    margin-left: 15%;
+}
+
+.cardType {
+color: black;
+}
+
+.cards {
+    margin: 0;
+    padding: 5px;
+    width: 15%;
+}
+.cardTypes{
+    color: white;
+    text-align: center;
+
+}  
 .card:hover {
     cursor:pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -28,10 +55,34 @@ font-size: 20px;
     padding: 5px;
     width: 15%;
 }
-.cardTypes{
+.player1Scores, .player2Scores, .player3Scores, .player4Scores{
+    background-color: rgba(255, 255, 255);
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.player1Scores {
     position: absolute;
-    left: 3px;
-    bottom: 0px;
-    color: white;
-    text-align: center;
+    top: 10%;
+    right: 5%;
+}
+.player2Scores {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+.player3Scores {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.player4Scores {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+
 }

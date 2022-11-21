@@ -7,3 +7,6 @@ if(card[first].pokemonIndex === card[second].pokemonIndex){
     console.log('match')
 }
 }
+const handleClick = (index) => {
+    
+}
