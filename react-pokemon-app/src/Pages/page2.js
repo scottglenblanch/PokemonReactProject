@@ -1,5 +1,5 @@
 import React from "react"
-import Jcode from '../sections/hjake07/components/gameCode'
+import Jcode from '../Global/Components/Jcomponents/gameCode'
 export default function page2(){
 
     return (
