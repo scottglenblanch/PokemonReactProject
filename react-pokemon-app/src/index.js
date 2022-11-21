@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './Tests/reportWebVitals';
+import './sections/hjake07/Jstyles.css';
+
+//-------------------------------------
 import App from './App'
 
 
@@ -9,7 +12,12 @@ import App from './App'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App></App>
+   <App />
+   
+    
+
+   
+
  </React.StrictMode>
 );
 

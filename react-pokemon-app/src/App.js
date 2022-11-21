@@ -1,10 +1,10 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 //-------------------------------------
-
+import 'bootstrap/dist/css/bootstrap.css'
 import Tcode from './sections/TrC-Mt/Tsection';
-import Jcode from './sections/hjake07/Jsection';
+import Jcode from './sections/hjake07/components/gameCode'
 import Wcode from './sections/Walls101/Wsection';
-
+import './sections/hjake07/Jstyles.css'
 import PAGES from './Pages/Pages'
 
 export default function App(){
@@ -45,9 +45,12 @@ function Navbar(){
     return(
         <>
             <nav>
-                <Link to='/'>Page 1</Link>
-                <Link to='/game'>Page 2</Link>
-                <Link to='/choose-type'>Page 3</Link>
+                <h1 className='navTitle'>Pokemon Matching Game</h1>
+                <div className='linksDiv'>
+                <Link to='/' className="links">Home</Link>
+                <Link to='/game' className="links">Play</Link>
+                <Link to='/choose-type' className="links">Explore</Link>
+                </div>
             </nav>
         </>
     )
