@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 //-------------------------------------
 import 'bootstrap/dist/css/bootstrap.css'
 import Tcode from './sections/TrC-Mt/Tsection';
-import Jcode from './sections/hjake07/components/gameCode'
+import Jcode from './Global/Components/Jcomponents/gameCode'
 import Wcode from './sections/Walls101/Wsection';
 import './sections/hjake07/Jstyles.css'
 import PAGES from './Pages/Pages'

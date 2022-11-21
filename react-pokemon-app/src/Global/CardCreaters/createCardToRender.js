@@ -1,7 +1,7 @@
 import React from 'react';
 import {useGetPokiData} from './createCardDataObject';
 import './cardstyles.css'
-
+import { handleClick } from '../../sections/hjake07/Jsection';
 export default function CreateCard(props){
     const pokemon_index = props.pokemonIndex ?? 1;
     const typeToDisplay = props.typeToDisplay;

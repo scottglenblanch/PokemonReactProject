@@ -1,4 +1,4 @@
-import CreateCard from '../../../Global/CardCreaters/createCardToRender'
+import CreateCard from '../../CardCreaters/createCardToRender'
 import Player1Score from './player1score'
 import Player2Score from './player2score';
 import Player3Score from './player3score';
