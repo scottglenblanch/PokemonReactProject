@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import TypeOptions from '../../Global/Components/Tcomponents/TypeOptions'
 
-// import CreateCard from '../../Global/CardCreaters/createCardToRender';
+import CreateCard from '../../Global/CardCreaters/createCardToRender';
 
 export default function Tcode(){ //Remember to rename your section here
     let [wantedType, setWantedType] = useState(null)

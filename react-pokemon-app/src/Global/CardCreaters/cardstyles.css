@@ -1,4 +1,5 @@
 .card {
+    display: flex;
     object-fit: cover;
     border: 1px solid black;
     width: 140px;
@@ -18,20 +19,17 @@ font-size: 20px;
 .cardImage {
     margin-left: 15%;
 }
+
 .cardType {
-display: flex;
-justify-content: center;
-color: black;   
+color: black;
 }
+
 .cards {
     margin: 0;
     padding: 5px;
     width: 15%;
 }
 .cardTypes{
-    position: absolute;
-    left: 3px;
-    bottom: 0px;
     color: white;
     text-align: center;
 
