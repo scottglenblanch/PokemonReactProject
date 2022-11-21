@@ -25,7 +25,6 @@ export default function Jcode(){ //Remember to rename your section here
       
         return array;
       }
-      console.log('1',arrayToSplit)
     let shuffledArray = arrayToSplit.concat(arrayToSplit.slice())
     return(
             <div className='mySection' id="myTableSection">
