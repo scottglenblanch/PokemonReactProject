@@ -46,8 +46,9 @@ font-size: 20px;
     margin-left: 15%;
 }
 .cardType {
-display: flex;
-justify-content: center;    
+    display: flex;
+    justify-content: center;
+    color: black;
 }
 .cards {
     margin: 0;
