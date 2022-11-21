@@ -3,7 +3,7 @@ import CreateCard from '../../Global/CardCreaters/createCardToRender';
 import '../Walls101/Wstyles.css'
 import '../hjake07/Jstyles.css'
 
-import DeckOption from './components/ChosenDeck';
+import DeckOption from '../../Global/Components/Wcomponents/ChosenDeck'
 
 export default function DeckSelection(){
     return(
