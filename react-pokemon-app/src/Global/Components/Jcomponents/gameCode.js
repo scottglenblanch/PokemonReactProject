@@ -105,7 +105,7 @@ export default function Jcode(){ //Remember to rename your section here
                         </div> 
                    ) : null )}
                  
-                        </div>z
+                        </div>
                 <Player1Score />
                 <Player2Score />
                 <Player3Score />
