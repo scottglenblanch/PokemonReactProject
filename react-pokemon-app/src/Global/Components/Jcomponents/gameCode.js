@@ -33,7 +33,7 @@ export default function Jcode(){ //Remember to rename your section here
                         <div className="cards"><CreateCard pokemonIndex={1 + index} typeToDisplay={null} key={index}/></div> 
                    ) )}
                  
-                        </div>
+                        </div>z
                 <Player1Score />
                 <Player2Score />
                 <Player3Score />

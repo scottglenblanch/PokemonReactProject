@@ -6,19 +6,29 @@ import Jcode from './Global/Components/Jcomponents/gameCode'
 import Wcode from './sections/Walls101/Wsection';
 import './sections/hjake07/Jstyles.css'
 import PAGES from './Pages/Pages'
+import { useState } from 'react';
+import { AppContext_AmountPlayers, AppContext_TypeSelected } from './AppContext';
 
 export default function App(){
+    const [players_count, setPlayersCount] = useState(1)
+    const [type_selected, setTypeSelected] = useState(null)
+
     return(
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route exact path="/" element={<PAGES.Page1 />} />
-                <Route path="/game" element={<PAGES.Page2 />} />
-                <Route path="/choose-type" element={<PAGES.Page3 />} />
-                <Route path="/hidden-tests" element={<TestPage/>} />
-                <Route path="*" element={<ErrorPage/>} />
-            </Routes>
-        </Router>
+        <AppContext_AmountPlayers.Provider value={{players_count, setPlayersCount}}>
+        <AppContext_TypeSelected.Provider value={{type_selected, setTypeSelected}}>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route exact path="/" element={<PAGES.Page1 />} />
+                    <Route path="/game" element={<PAGES.Page2 />} />
+                    <Route path="/choose-type" element={<PAGES.Page3 />} />
+                    <Route path="/hidden-tests" element={<TestPage/>} />
+                    <Route path="*" element={<ErrorPage/>} />
+                </Routes>
+            </Router>
+            </AppContext_TypeSelected.Provider>
+        </AppContext_AmountPlayers.Provider>
+        
     )
 }
 
