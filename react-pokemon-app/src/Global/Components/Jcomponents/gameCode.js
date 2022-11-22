@@ -36,12 +36,14 @@ export default function Jcode(){ //Remember to rename your section here
     }
 
     useEffect(() => {
+      const firstCardPosition = displayArray[firstCardSelectedPosition]?.position
+      const secondCardPosition = displayArray[secondCardSelectedPosition]?.position
       const firstCardIndex = displayArray[firstCardSelectedPosition]?.index;
       const secondCardIndex = displayArray[secondCardSelectedPosition]?.index;
       const isBothSelected = firstCardSelectedPosition !== null && 
       secondCardSelectedPosition !== null
       const isMatch =  isBothSelected && 
-        firstCardIndex === secondCardIndex;
+        firstCardIndex === secondCardIndex && firstCardPosition !== secondCardPosition;
       const isNotMatch = isBothSelected && !isMatch
 
       if(isMatch) {
