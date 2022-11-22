@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import HandleClick from '../../../sections/hjake07/Jsection';
 import CreateCard from '../../CardCreaters/createCardToRender'
 import Player1Score from './player1score'
 import Player2Score from './player2score';
