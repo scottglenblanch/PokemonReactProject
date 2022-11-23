@@ -23,7 +23,7 @@ export default function Jcode(){ //Remember to rename your section here
       setTimeout(() => {
       setFirstCardSelectedPosition(null);
       setSecondCardSelectedPosition(null);
-      }, 500)
+      }, 900)
     }
 
     const updateWhenMatchFound = () => {
@@ -64,16 +64,21 @@ export default function Jcode(){ //Remember to rename your section here
             const randomNumber = Math.floor(Math.random() * 81)
             randomArray.push(defaultArray[randomNumber])
           }
-      const arrayWithUniqueTypes = [...new Set(randomArray)].slice(0, 12);
-      const displayArrayWithoutPosition = [
-        ...arrayWithUniqueTypes,
-        ...arrayWithUniqueTypes
+      const arrayWithUniqueTypes24 = [...new Set(randomArray)].slice(0, 12);
+      const arrayWithUniqueTypes12 = [...new Set(randomArray)].slice(0, 6)
+      const displayArrayWithoutPosition24 = [
+        ...arrayWithUniqueTypes24,
+        ...arrayWithUniqueTypes24
       ];
+      const displayArrayWithoutPosition12 = [
+        ...arrayWithUniqueTypes12,
+        ...arrayWithUniqueTypes12
+      ]
 
       // shuffle
-      shuffleArray(displayArrayWithoutPosition);
+      shuffleArray(displayArrayWithoutPosition12); //change to 24 for full size game
       
-      displayArray = displayArrayWithoutPosition.map((index, position) => ({
+      displayArray = displayArrayWithoutPosition12.map((index, position) => ({ //change to 24 for full size game
         index, isHidden: false, position
       }))
 
