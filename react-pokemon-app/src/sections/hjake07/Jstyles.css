@@ -9,9 +9,16 @@
 .backgroundTest {
     background-color: rgb(43, 80, 215);
     background-image: url(../../Global/images/pokeball.png);
-    background-size: 130px;
+    background-size: 100px;
     background-repeat: no-repeat;
     background-position: center;
+    width: 140px;
+    height: 190px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.backgroundTest:hover {
+    cursor: pointer;
 }
 .theContainer {
     background-image: url(../../Global/images/pokemon-background.png);
