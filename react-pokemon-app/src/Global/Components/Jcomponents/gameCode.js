@@ -20,8 +20,10 @@ export default function Jcode(){ //Remember to rename your section here
     const [secondCardSelectedPosition, setSecondCardSelectedPosition] = useState(null);
 
     const resetSelectedPositions= () => {
+      setTimeout(() => {
       setFirstCardSelectedPosition(null);
       setSecondCardSelectedPosition(null);
+      }, 500)
     }
 
     const updateWhenMatchFound = () => {
