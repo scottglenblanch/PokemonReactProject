@@ -6,6 +6,9 @@ import Player2Score from './player2score';
 import Player3Score from './player3score';
 import Player4Score from './player4score';
 
+import { AppContext_AmountPlayers, AppContext_TypeSelected } from './AppContext';
+
+
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -101,7 +104,7 @@ export default function Jcode(){ //Remember to rename your section here
                             onClick={() => onClick(position)}
                             key={position}
                             pokemonIndex={1 + index} 
-                            typeToDisplay={null}
+                            typeToDisplay={AppContext_TypeSelected}
                             selected={position === firstCardSelectedPosition || position === secondCardSelectedPosition} 
                           />
                         </div> 
