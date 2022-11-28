@@ -1,14 +1,15 @@
 import CreateCard from "../../Global/CardCreaters/createCardToRender";
 export default function All(){
-const allArray = Array.from({length: 81}, (_, i) => i + 1)
+const allArray = Array.from({length: 151}, (_, i) => i + 1)
 console.log(allArray)
+const waterArray = []
 return(
     <div className="p3container">
 {allArray.map((index) => (
     
     
     
-        <div><CreateCard pokemonIndex={index} typeToDisplay={null} /></div>
+        <div id="div"><CreateCard pokemonIndex={index} typeToDisplay={'flying'} /></div>
    
 ))
 }
@@ -16,3 +17,8 @@ return(
 
 </div>
 )}
+// for(let i = 0; i < 151; i++){
+// if(!typeToDisplay){
+
+// }
+// }

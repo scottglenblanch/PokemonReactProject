@@ -25,11 +25,11 @@ font-size: 20px;
 color: black;
 }
 
-.cards {
+/* .cards {
     margin: 0;
     padding: 5px;
     width: 15%;
-}
+} */
 .cardTypes{
     display: block !important;
     color: white;
@@ -54,11 +54,7 @@ font-size: 20px;
     justify-content: center;
     color: black;
 }
-.cards {
-    margin: 0;
-    padding: 5px;
-    width: 15%;
-}
+
 .player1Scores, .player2Scores, .player3Scores, .player4Scores{
     background-color: rgba(255, 255, 255);
     width: fit-content;

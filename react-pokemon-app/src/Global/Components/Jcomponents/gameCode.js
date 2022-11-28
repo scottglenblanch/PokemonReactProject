@@ -4,6 +4,7 @@ import Player1Score from './player1score'
 import Player2Score from './player2score';
 import Player3Score from './player3score';
 import Player4Score from './player4score';
+import { AppContext_TypeSelected, AppContext_AmountPlayers } from '../../../AppContext'
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffleArray(array) {
@@ -58,7 +59,7 @@ export default function Jcode(){ //Remember to rename your section here
 
     useEffect(() => {
       let displayArray;
-      const defaultArray = Array.from({length: 81}, (_, i) => i + 1)
+      const defaultArray = Array.from({length: 151}, (_, i) => i + 1)
       let randomArray = []
           for(let j = 0; j < 20; j++){
             const randomNumber = Math.floor(Math.random() * 81)
@@ -76,9 +77,9 @@ export default function Jcode(){ //Remember to rename your section here
       ]
 
       // shuffle
-      shuffleArray(displayArrayWithoutPosition12); //change to 24 for full size game
+      shuffleArray(displayArrayWithoutPosition24); //change to 24 for full size game
       
-      displayArray = displayArrayWithoutPosition12.map((index, position) => ({ //change to 24 for full size game
+      displayArray = displayArrayWithoutPosition24.map((index, position) => ({ //change to 24 for full size game
         index, isHidden: false, position
       }))
 
