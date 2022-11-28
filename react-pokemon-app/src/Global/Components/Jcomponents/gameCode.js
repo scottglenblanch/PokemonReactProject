@@ -18,7 +18,7 @@ function shuffleArray(array) {
 }
 
 export default function Jcode(){ //Remember to rename your section here
-
+  const {players_count} = useContext(AppContext_AmountPlayers)
   const {type_selected} = useContext(AppContext_TypeSelected)
   const {isCardDisplaying} = useContext(AppContext_CardDisplaying)
 
@@ -128,3 +128,102 @@ export default function Jcode(){ //Remember to rename your section here
         
     ) 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=============================
+/*
+function(iterator)
+  Create the card with index as iterator
+  if isCardDisplaying
+        array.push(Card)
+        increment iterator
+        rerun the function
+  else
+        increment iterator
+        rerun the function
+
+//----------------------------------------
+let i = 0;
+let array = []
+function createTestCards(i){
+  var position = null;
+  <CreateCard
+    onClick={() => onClick(position)}
+    key={position}
+    pokemonIndex={i}
+    typeToDisplay={type_selected}
+    selected={position === firstCardSelectedPosition || position === secondCardSelectedPosition} 
+  />
+  if(isCardDisplaying){
+    position = // random positioning function
+    array.push(
+      <CreateCard
+        onClick={() => onClick(position)}
+        key={position}
+        pokemonIndex={i}
+        typeToDisplay={type_selected}
+        selected={position === firstCardSelectedPosition || position === secondCardSelectedPosition} 
+      />
+      i += 1
+      if(i < 152){
+        createTestCards(i)
+      }
+      else{
+        //done
+      }
+  else{
+    i += 1
+      if(i < 152){
+        createTestCards(i)
+      }
+      else{
+        //done
+      }
+  }
+      
+    )
+  }
+
+}
+//render array
+
+*/
