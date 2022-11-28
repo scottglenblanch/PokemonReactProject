@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
 import { useEffect, useState, useContext } from 'react';
-import HandleClick from '../../../sections/hjake07/Jsection';
 import CreateCard from '../../CardCreaters/createCardToRender'
 import Player1Score from './player1score'
 import Player2Score from './player2score';
 import Player3Score from './player3score';
 import Player4Score from './player4score';
-import { AppContext_TypeSelected, AppContext_AmountPlayers } from '../../../AppContext'
+
 
 import { AppContext_AmountPlayers, AppContext_CardDisplaying, AppContext_TypeSelected } from '../../../AppContext';
 
@@ -21,6 +19,8 @@ function shuffleArray(array) {
 
 export default function Jcode(){ //Remember to rename your section here
 
+  const testArray = Array.from({length: 151}, (_, i) => i + 1)
+  console.log(testArray)
   const {type_selected} = useContext(AppContext_TypeSelected)
   const {isCardDisplaying} = useContext(AppContext_CardDisplaying)
 
@@ -65,16 +65,17 @@ export default function Jcode(){ //Remember to rename your section here
       }
 
     }, [firstCardSelectedPosition, secondCardSelectedPosition, displayArray]);
+   
 
     useEffect(() => {
       let displayArray;
       const defaultArray = Array.from({length: 151}, (_, i) => i + 1)
       let randomArray = []
-          for(let j = 0; j < 20; j++){
-            const randomNumber = Math.floor(Math.random() * 81)
+          for(let j = 0; j < 151; j++){
+            const randomNumber = Math.floor(Math.random() * 151)
             randomArray.push(defaultArray[randomNumber])
           }
-      const arrayWithUniqueTypes24 = [...new Set(randomArray)].slice(0, 12);
+      const arrayWithUniqueTypes24 = [...new Set(randomArray)].slice(0, 151);
       const arrayWithUniqueTypes12 = [...new Set(randomArray)].slice(0, 6)
       const displayArrayWithoutPosition24 = [
         ...arrayWithUniqueTypes24,
@@ -91,7 +92,7 @@ export default function Jcode(){ //Remember to rename your section here
       displayArray = displayArrayWithoutPosition24.map((index, position) => ({ //change to 24 for full size game
         index, isHidden: false, position
       }))
-
+     
       setDisplayArray(displayArray);
     }, []);
 
@@ -113,16 +114,16 @@ export default function Jcode(){ //Remember to rename your section here
             <div className='mySection' id="myTableSection">
                 <div className='container'>
                       {displayArray.map(({ index, isHidden, position }) => !isHidden ? (
-                        <div className="cards" >
+                        <>
                           <CreateCard
                             onClick={() => onClick(position)}
                             key={position}
-                            pokemonIndex={1 + index}
+                            pokemonIndex={index + 1}
                             typeToDisplay={type_selected}
                             selected={position === firstCardSelectedPosition || position === secondCardSelectedPosition} 
                           />
                           {/* {console.log('Index: ' + index + ' IsCardDisplaying: ' + isCardDisplaying)} */}
-                        </div> 
+                        </> 
                    ) : null )}
                  
                         </div>
@@ -136,4 +137,18 @@ export default function Jcode(){ //Remember to rename your section here
             
         
     ) 
+    const psycicArray = []
+    function makeCardArray(){
+      psycicArray.push( isCardDisplaying => {
+      <CreateCard
+      key={null}
+      pokemonIndex={null}
+      typeToDisplay={type_selected}
+    />
+  }
+      )
+    }
+  
+  
         }
+      
