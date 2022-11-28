@@ -11,7 +11,7 @@ export default function WelcomePage(){
                 <h1 className='title'>Pokemon Matching Game</h1>
                 <h2 className='playerSelect'>Players</h2>
                 <PlayerAmountOptionComponent></PlayerAmountOptionComponent>
-                <PlayerNameComponents></PlayerNameComponents>
+                <PlayerNameComponents ></PlayerNameComponents>
                 <button className='btn btn-primary w-25 mx-auto'>Start Playing!</button>
             </div>
         </div>
