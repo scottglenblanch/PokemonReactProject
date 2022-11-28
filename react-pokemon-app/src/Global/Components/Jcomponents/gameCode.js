@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import HandleClick from '../../../sections/hjake07/Jsection';
 import CreateCard from '../../CardCreaters/createCardToRender'
 import Player1Score from './player1score'
@@ -6,7 +6,7 @@ import Player2Score from './player2score';
 import Player3Score from './player3score';
 import Player4Score from './player4score';
 
-import { AppContext_AmountPlayers, AppContext_TypeSelected } from './AppContext';
+import { AppContext_AmountPlayers, AppContext_TypeSelected } from '../../../AppContext';
 
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -18,6 +18,9 @@ function shuffleArray(array) {
 }
 
 export default function Jcode(){ //Remember to rename your section here
+
+  const {type_selected, setTypeSelected} = useContext(AppContext_TypeSelected)
+
 
     const [displayArray, setDisplayArray] = useState([]);
     const [firstCardSelectedPosition, setFirstCardSelectedPosition ] = useState(null);
@@ -96,6 +99,7 @@ export default function Jcode(){ //Remember to rename your section here
     };
     
     return(
+      <>
             <div className='mySection' id="myTableSection">
                 <div className='container'>
                       {displayArray.map(({ index, isHidden, position }) => !isHidden ? (
@@ -104,7 +108,7 @@ export default function Jcode(){ //Remember to rename your section here
                             onClick={() => onClick(position)}
                             key={position}
                             pokemonIndex={1 + index} 
-                            typeToDisplay={AppContext_TypeSelected}
+                            typeToDisplay={type_selected}
                             selected={position === firstCardSelectedPosition || position === secondCardSelectedPosition} 
                           />
                         </div> 
@@ -117,6 +121,11 @@ export default function Jcode(){ //Remember to rename your section here
                 <Player4Score />
                 
             </div>
+            <>
+            <button onClick={console.log(type_selected)}>Console.log Type</button>
+            </>
+        </>
+            
         
     ) 
         }
